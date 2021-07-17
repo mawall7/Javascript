@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let string1 = "abc yyyyyyyy cfg defg jkl a uuuuuuu iii";
+        let string2 = "abcf defg yyyyyyyy jkl uuuuuuu bv iii";  //common longest substring is defg program task is to write a program to display it /
+        const matches = [];
+
+        let a1 = string1.split(" ");
+        let a2 = string2.split(" ");
+
+        
+        const myFunction = (item) => 
+        {
+            a2.includes(item)?
+            matches.push(item):
+            null; 
+        }
+        
+        
+        a1.forEach(myFunction);
+        
+        
+        var longest = matches.reduce(function(thisitem, previousitem)
+        {
+            console.log("thisitem:")
+            console.log(thisitem);
+            console.log(thisitem.length);
+            console.log("previousitem")
+            console.log(previousitem);
+            console.log(previousitem.length);
+
+            return thisitem.length > previousitem.length ? thisitem : previousitem;
+
+        })
+
+        // function returnlongest(matches){
+
+        //     matches.reduce(function)
+        // }
+        // var longest = ruturnlongest(matches);
+
+        // console.log(matches);
+         console.log("The longest common substring is " + longest);
+
+    </script>
+</body>
+</html>
