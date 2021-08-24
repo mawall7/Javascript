@@ -1,4 +1,4 @@
-- Uppgiften är från https://adriann.github.io/programming_problems.html
+- Uppgiften är från https://adriann.github.io/programming_problems.html -> Advanced
 
 - Programmet/scriptet ska jämföra två strängar som innehåller flera 
   substringar med olika längd och slutligen returnera den gemensamt
